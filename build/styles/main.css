@@ -93,3 +93,9 @@ header .profile-avatar {
   color: #F30004;
   background-color: transparent;
 }
+footer {
+  padding: 24px;
+  text-align: center;
+  font-size: 0.8em;
+  margin-bottom: 56px;
+}
