@@ -8,8 +8,8 @@
   font-family: 'Space Mono', monospace;
 }
 body {
-  background-color: #0B0A0F;
-  color: #FDFE38;
+  background-color: #242424;
+  color: #e2e242;
 }
 li {
   list-style: none;
@@ -44,19 +44,23 @@ header .profile-avatar {
   margin: 0 auto 24px;
   border-radius: 50%;
 }
+header .profile-avatar:hover {
+  transition: all ease 0.5s;
+  transform: scale(1.5);
+}
 .profile-bio {
   text-align: center;
 }
 .profile-bio-name {
-  font-size: 16px;
+  font-size: 24px;
   margin-bottom: 8px;
 }
 .profile-bio-subtitle {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 8px;
 }
 .profile-bio-description {
-  font-size: 14px;
+  font-size: 10px;
   opacity: 0.7;
 }
 .social-links {
@@ -78,24 +82,24 @@ header .profile-avatar {
 }
 .projects-list-item a {
   text-decoration: none;
-  background-color: #F30004;
+  background-color: #e7191d;
   display: block;
   padding: 16px 20px;
   margin-bottom: 16px;
   text-align: center;
-  color: #FDFE38;
+  color: #e2e242;
   font-weight: bold;
   border-radius: 30px;
-  border: 2px solid #F30004;
+  border: 2px solid #e7191d;
   transition: all ease 0.5s;
 }
 .projects-list-item a:hover {
-  color: #F30004;
+  color: #e7191d;
   background-color: transparent;
 }
 footer {
   padding: 24px;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 10px;
   margin-bottom: 56px;
 }
