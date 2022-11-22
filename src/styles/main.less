@@ -19,10 +19,6 @@ body {
     color: #colors[textColor];
 }
 
-li {
-    list-style: none;
-}
-
 .container {
     padding-top: 56px;
     max-width: 960px;
@@ -71,6 +67,12 @@ header {
         .marginBottom8();
     }
 
+    &-subtec {
+        font-size: 12px;
+        .marginBottom8();
+        color: #colors[buttonColor];
+    }
+
     &-description {
         font-size: 10px;
         opacity: .7;
@@ -85,6 +87,7 @@ header {
     margin: 0 auto;
 
     li {
+        list-style: none;
         img {
             max-width: 32px;
             &:hover {
@@ -97,6 +100,8 @@ header {
 
 .projects-list {
     margin-top: 32px;
+    list-style: none;
+
     &-item {
         a {
             text-decoration: none;
@@ -107,7 +112,7 @@ header {
             text-align: center;
             color: #colors[textColor];
             font-weight: bold;
-            border-radius: 30px;
+            border-radius: 50px;
             border: 2px solid #colors[buttonColor];
             transition: all ease .5s;
 
@@ -115,6 +120,24 @@ header {
                 color:#colors[buttonColor];
                 background-color: transparent;
             }
+        }
+
+        &:hover .projects-list-description {
+            display: block;
+        }
+    }
+
+    &-description {
+        max-width: 680px;
+        width: 100%;
+        margin: 18px auto;
+        padding: 12px;
+        font-size: 12px;
+        display: none;
+        list-style: armenian;
+        
+        h3 {
+            font-style: italic;
         }
     }
 }

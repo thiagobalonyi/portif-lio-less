@@ -11,9 +11,6 @@ body {
   background-color: #242424;
   color: #e2e242;
 }
-li {
-  list-style: none;
-}
 .container {
   padding-top: 56px;
   max-width: 960px;
@@ -59,6 +56,11 @@ header .profile-avatar:hover {
   font-size: 16px;
   margin-bottom: 8px;
 }
+.profile-bio-subtec {
+  font-size: 12px;
+  margin-bottom: 8px;
+  color: #e7191d;
+}
 .profile-bio-description {
   font-size: 10px;
   opacity: 0.7;
@@ -70,6 +72,9 @@ header .profile-avatar:hover {
   width: 100%;
   margin: 0 auto;
 }
+.social-links li {
+  list-style: none;
+}
 .social-links li img {
   max-width: 32px;
 }
@@ -79,6 +84,7 @@ header .profile-avatar:hover {
 }
 .projects-list {
   margin-top: 32px;
+  list-style: none;
 }
 .projects-list-item a {
   text-decoration: none;
@@ -89,13 +95,28 @@ header .profile-avatar:hover {
   text-align: center;
   color: #e2e242;
   font-weight: bold;
-  border-radius: 30px;
+  border-radius: 50px;
   border: 2px solid #e7191d;
   transition: all ease 0.5s;
 }
 .projects-list-item a:hover {
   color: #e7191d;
   background-color: transparent;
+}
+.projects-list-item:hover .projects-list-description {
+  display: block;
+}
+.projects-list-description {
+  max-width: 680px;
+  width: 100%;
+  margin: 18px auto;
+  padding: 12px;
+  font-size: 12px;
+  display: none;
+  list-style: armenian;
+}
+.projects-list-description h3 {
+  font-style: italic;
 }
 footer {
   padding: 24px;
